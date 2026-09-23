@@ -111,31 +111,69 @@
   ],
   "diagrams": [
     {
-      "image": null,
+      "image": "/images/projects/aos-abhbc/uml-use-case.webp",
       "alt": {
-        "en": "Use case diagram",
-        "fr": "Diagramme de cas d'utilisation"
+        "en": "Use case diagram — employee, administrator, scheduler and Telegram service",
+        "fr": "Diagramme de cas d'utilisation — employé, administrateur, planificateur et service Telegram"
+      },
+      "caption": {
+        "en": "Use cases — three actors and the Telegram service",
+        "fr": "Cas d'utilisation — trois acteurs et le service Telegram"
       }
     },
     {
-      "image": null,
+      "image": "/images/projects/aos-abhbc/uml-class.webp",
       "alt": {
-        "en": "Class diagram",
-        "fr": "Diagramme de classes"
+        "en": "Class diagram of the domain model — users, reservations, orders, articles and options, announcements",
+        "fr": "Diagramme de classes du modèle métier — utilisateurs, réservations, commandes, articles et options, annonces"
+      },
+      "caption": {
+        "en": "Class diagram — domain model",
+        "fr": "Diagramme de classes — modèle métier"
       }
     },
     {
-      "image": null,
+      "image": "/images/projects/aos-abhbc/uml-sequence-login.webp",
       "alt": {
-        "en": "Sequence diagram",
-        "fr": "Diagramme de séquence"
+        "en": "Sequence diagram of authentication — rate limiting, BCrypt check, account status and JWT issuance",
+        "fr": "Diagramme de séquence de l'authentification — limitation des tentatives, vérification BCrypt, statut du compte et émission du JWT"
+      },
+      "caption": {
+        "en": "Sequence — authentication with JWT",
+        "fr": "Séquence — authentification avec JWT"
       }
     },
     {
-      "image": null,
+      "image": "/images/projects/aos-abhbc/uml-sequence-meeting-order.webp",
       "alt": {
-        "en": "Deployment diagram",
-        "fr": "Diagramme de déploiement"
+        "en": "Sequence diagram of a meeting order — business checks, persistence and non-blocking Telegram notification",
+        "fr": "Diagramme de séquence d'une commande de réunion — contrôles métier, enregistrement et notification Telegram non bloquante"
+      },
+      "caption": {
+        "en": "Sequence — meeting order",
+        "fr": "Séquence — commande de réunion"
+      }
+    },
+    {
+      "image": "/images/projects/aos-abhbc/uml-activity-registration.webp",
+      "alt": {
+        "en": "Activity diagram of registration and account validation by the administrator",
+        "fr": "Diagramme d'activité de l'inscription et de la validation du compte par l'administrateur"
+      },
+      "caption": {
+        "en": "Activity — registration and validation",
+        "fr": "Activité — inscription et validation"
+      }
+    },
+    {
+      "image": "/images/projects/aos-abhbc/uml-deployment.webp",
+      "alt": {
+        "en": "Deployment diagram — Nginx, Spring Boot and PostgreSQL containers on the agency VM, Telegram servers",
+        "fr": "Diagramme de déploiement — conteneurs Nginx, Spring Boot et PostgreSQL sur la VM de l'agence, serveurs Telegram"
+      },
+      "caption": {
+        "en": "Deployment — Docker containers",
+        "fr": "Déploiement — conteneurs Docker"
       }
     }
   ],
@@ -238,8 +276,8 @@
         "fr": "UML"
       },
       "body": {
-        "en": "",
-        "fr": ""
+        "en": "The design is modelled in UML: use cases, domain model, the two most important flows, account validation and deployment. Click a diagram to enlarge it.",
+        "fr": "La conception est modélisée en UML : cas d'utilisation, modèle métier, les deux flux principaux, validation des comptes et déploiement. Cliquez sur un diagramme pour l'agrandir."
       },
       "bullets": {
         "en": [],

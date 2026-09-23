@@ -215,6 +215,7 @@ export default config({
           fields.object({
             image: fields.image({ label: "Diagram", directory: "public/images/projects", publicPath: "/images/projects/" }),
             alt: bilingual("Diagram name"),
+            caption: bilingual("Caption (optional)"),
           }),
           { label: "UML / architecture diagrams", itemLabel: (p) => p.fields.alt.fields.en.value || "Diagram" },
         ),

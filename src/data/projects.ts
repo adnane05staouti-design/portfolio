@@ -23,7 +23,7 @@ type ProjectJson = {
   liveUrl?: string | null;
   highlights?: LocList;
   screenshots?: { image?: string | null; alt: LocText; caption?: LocText }[];
-  diagrams?: { image?: string | null; alt: LocText }[];
+  diagrams?: { image?: string | null; alt: LocText; caption?: LocText }[];
   sections?: { key: string; title: LocText; body?: LocText; bullets?: LocList }[];
   pending?: string[];
 };
@@ -58,7 +58,7 @@ const toProject = (p: ProjectJson & { slug: string }): Project => ({
   screenshots: (p.screenshots ?? []).map((s) =>
     image(s.image, s.alt, `ADD SCREENSHOT — ${loc(s.alt)?.en ?? ""}`.trim(), s.caption),
   ),
-  diagrams: (p.diagrams ?? []).map((d) => image(d.image, d.alt, `ADD ${(loc(d.alt)?.en ?? "DIAGRAM").toUpperCase()}`)),
+  diagrams: (p.diagrams ?? []).map((d) => image(d.image, d.alt, `ADD ${(loc(d.alt)?.en ?? "DIAGRAM").toUpperCase()}`, d.caption)),
   sections: (p.sections ?? [])
     .filter((s) => s.key && loc(s.title))
     .map((s) => ({ id: s.key.trim(), title: loc(s.title)!, body: paragraphs(s.body), bullets: list(s.bullets) })),

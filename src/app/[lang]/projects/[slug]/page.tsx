@@ -88,7 +88,7 @@ export default async function ProjectPage({ params }: PageProps<"/[lang]/project
       case "screenshots":
         return <Gallery items={project.screenshots.map((img) => toGalleryItem(img, lang))} labels={galleryLabels} />;
       case "uml":
-        return <Gallery items={project.diagrams.map((img) => toGalleryItem(img, lang))} labels={galleryLabels} variant="plain" />;
+        return <Gallery items={project.diagrams.map((img) => toGalleryItem(img, lang))} labels={galleryLabels} variant="plain" fit="contain" />;
       default:
         return null;
     }
