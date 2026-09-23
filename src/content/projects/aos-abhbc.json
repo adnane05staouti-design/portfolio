@@ -1,0 +1,525 @@
+{
+  "title": "AOS ABHBC",
+  "order": 0,
+  "featured": true,
+  "subtitle": {
+    "en": "Internal social-services management platform",
+    "fr": "Plateforme interne de gestion des œuvres sociales"
+  },
+  "summary": {
+    "en": "A full-stack web platform that centralizes an agency's cafeteria reservations, meeting and breakfast orders, social-service announcements and administration — with automated Telegram notifications and a containerized deployment.",
+    "fr": "Une plateforme web full-stack qui centralise les réservations de la buvette, les commandes de réunion et de petit-déjeuner, les annonces des œuvres sociales et l'administration — avec des notifications Telegram automatisées et un déploiement conteneurisé."
+  },
+  "context": "internship",
+  "period": {
+    "en": "July – August 2026",
+    "fr": "Juillet – août 2026"
+  },
+  "role": {
+    "en": "Software development intern — analysis, design, backend, frontend and deployment",
+    "fr": "Stagiaire en développement — analyse, conception, backend, frontend et déploiement"
+  },
+  "stack": [
+    "Java 21",
+    "Spring Boot 3.5",
+    "Spring Security",
+    "Spring Data JPA",
+    "JWT",
+    "BCrypt",
+    "PostgreSQL 17",
+    "Flyway",
+    "Swagger / OpenAPI",
+    "Actuator",
+    "JUnit",
+    "k6",
+    "React",
+    "Vite",
+    "React Router",
+    "Axios",
+    "Telegram Bot API",
+    "Docker",
+    "Docker Compose",
+    "Nginx"
+  ],
+  "thumbnail": null,
+  "thumbnailAlt": {
+    "en": "AOS ABHBC — employee portal",
+    "fr": "AOS ABHBC — portail employé"
+  },
+  "repoVisibility": "private",
+  "repoUrl": "",
+  "liveUrl": "",
+  "highlights": {
+    "en": [
+      "JWT auth, roles & account approval",
+      "Admin-managed dynamic catalogue",
+      "Telegram notifications & scheduled tasks",
+      "Dockerized: Nginx · Spring Boot · PostgreSQL"
+    ],
+    "fr": [
+      "Auth JWT, rôles et validation des comptes",
+      "Catalogue dynamique géré par l'admin",
+      "Notifications Telegram et tâches planifiées",
+      "Dockerisé : Nginx · Spring Boot · PostgreSQL"
+    ]
+  },
+  "screenshots": [
+    {
+      "image": null,
+      "alt": {
+        "en": "Employee portal — service categories",
+        "fr": "Portail employé — catégories de services"
+      },
+      "caption": {
+        "en": "Employee portal",
+        "fr": "Portail employé"
+      }
+    },
+    {
+      "image": null,
+      "alt": {
+        "en": "Admin dashboard — overview tab",
+        "fr": "Tableau de bord admin — vue d'ensemble"
+      },
+      "caption": {
+        "en": "Admin dashboard",
+        "fr": "Tableau de bord admin"
+      }
+    },
+    {
+      "image": null,
+      "alt": {
+        "en": "Reservation and order flow",
+        "fr": "Parcours de réservation et de commande"
+      },
+      "caption": {
+        "en": "Reservations & orders",
+        "fr": "Réservations et commandes"
+      }
+    }
+  ],
+  "diagrams": [
+    {
+      "image": null,
+      "alt": {
+        "en": "Use case diagram",
+        "fr": "Diagramme de cas d'utilisation"
+      }
+    },
+    {
+      "image": null,
+      "alt": {
+        "en": "Class diagram",
+        "fr": "Diagramme de classes"
+      }
+    },
+    {
+      "image": null,
+      "alt": {
+        "en": "Sequence diagram",
+        "fr": "Diagramme de séquence"
+      }
+    },
+    {
+      "image": null,
+      "alt": {
+        "en": "Deployment diagram",
+        "fr": "Diagramme de déploiement"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "key": "overview",
+      "title": {
+        "en": "Overview",
+        "fr": "Vue d'ensemble"
+      },
+      "body": {
+        "en": "AOS ABHBC is an internal web platform built during my internship at the Agence du Bassin Hydraulique du Bouregreg et de la Chaouia. It started as a cafeteria reservation tool and grew into a portal for the agency's social services, organized in nine categories.\n\nEmployees use it to reserve lunch, order for meetings or breakfast and read social-service announcements. Administrators manage the catalogue, users, announcements and notifications from a dedicated dashboard. The interface is in Arabic.",
+        "fr": "AOS ABHBC est une plateforme web interne réalisée pendant mon stage à l'Agence du Bassin Hydraulique du Bouregreg et de la Chaouia. Partie d'un outil de réservation pour la buvette, elle est devenue un portail des œuvres sociales de l'agence, organisé en neuf catégories.\n\nLes employés l'utilisent pour réserver le déjeuner, commander pour une réunion ou un petit-déjeuner et consulter les annonces. Les administrateurs gèrent le catalogue, les utilisateurs, les annonces et les notifications depuis un tableau de bord dédié. L'interface est en arabe."
+      },
+      "bullets": {
+        "en": [],
+        "fr": []
+      }
+    },
+    {
+      "key": "problem",
+      "title": {
+        "en": "Problem",
+        "fr": "Problème"
+      },
+      "body": {
+        "en": "Internal processes — cafeteria lunch reservations, meeting and breakfast orders, social-service announcements — were handled without a centralized digital tool.",
+        "fr": "Les processus internes — réservations du déjeuner, commandes de réunion et de petit-déjeuner, annonces des œuvres sociales — étaient gérés sans outil numérique centralisé."
+      },
+      "bullets": {
+        "en": [],
+        "fr": []
+      }
+    },
+    {
+      "key": "requirements",
+      "title": {
+        "en": "Requirements",
+        "fr": "Besoins"
+      },
+      "body": {
+        "en": "",
+        "fr": ""
+      },
+      "bullets": {
+        "en": [
+          "Functional — employees register, then get approved by an administrator before signing in",
+          "Functional — one lunch reservation per employee per day; meeting and breakfast orders with configurable options",
+          "Functional — administrators manage the catalogue, announcements, users and Telegram settings without touching code",
+          "Functional — the cook and employees are notified automatically through Telegram",
+          "Non-functional — server-side security: hashed passwords, token-based authentication, role checks on every protected endpoint",
+          "Non-functional — a notification failure must never block a reservation",
+          "Non-functional — reproducible deployment on the agency's server, with secrets kept out of the code"
+        ],
+        "fr": [
+          "Fonctionnel — les employés s'inscrivent, puis un administrateur valide leur compte avant la connexion",
+          "Fonctionnel — une réservation de déjeuner par employé et par jour ; commandes de réunion et de petit-déjeuner avec options configurables",
+          "Fonctionnel — les administrateurs gèrent le catalogue, les annonces, les utilisateurs et les paramètres Telegram sans toucher au code",
+          "Fonctionnel — le cuisinier et les employés sont notifiés automatiquement via Telegram",
+          "Non fonctionnel — sécurité côté serveur : mots de passe hachés, authentification par jeton, contrôle des rôles sur chaque endpoint protégé",
+          "Non fonctionnel — un échec de notification ne doit jamais bloquer une réservation",
+          "Non fonctionnel — déploiement reproductible sur le serveur de l'agence, avec les secrets hors du code"
+        ]
+      }
+    },
+    {
+      "key": "solution",
+      "title": {
+        "en": "Solution",
+        "fr": "Solution"
+      },
+      "body": {
+        "en": "A React single-page application talks to a Spring Boot REST API backed by PostgreSQL. The API owns every business rule and every authorization decision; the frontend only presents data. Telegram is used as the notification channel for the cook and for announcements.",
+        "fr": "Une application React monopage communique avec une API REST Spring Boot adossée à PostgreSQL. L'API porte toutes les règles métier et toutes les décisions d'autorisation ; le frontend ne fait que présenter les données. Telegram sert de canal de notification pour le cuisinier et pour les annonces."
+      },
+      "bullets": {
+        "en": [],
+        "fr": []
+      }
+    },
+    {
+      "key": "architecture",
+      "title": {
+        "en": "Architecture",
+        "fr": "Architecture"
+      },
+      "body": {
+        "en": "In production, Nginx serves the React build and proxies /api and /uploads to the backend, so the browser only ever talks to one origin. The backend follows a layered design — controllers, services, repositories, entities — with DTOs at the API boundary.",
+        "fr": "En production, Nginx sert le build React et redirige /api et /uploads vers le backend : le navigateur ne parle qu'à une seule origine. Le backend suit une architecture en couches — contrôleurs, services, repositories, entités — avec des DTO à la frontière de l'API."
+      },
+      "bullets": {
+        "en": [],
+        "fr": []
+      }
+    },
+    {
+      "key": "uml",
+      "title": {
+        "en": "UML",
+        "fr": "UML"
+      },
+      "body": {
+        "en": "",
+        "fr": ""
+      },
+      "bullets": {
+        "en": [],
+        "fr": []
+      }
+    },
+    {
+      "key": "stack",
+      "title": {
+        "en": "Technology stack",
+        "fr": "Stack technique"
+      },
+      "body": {
+        "en": "",
+        "fr": ""
+      },
+      "bullets": {
+        "en": [],
+        "fr": []
+      }
+    },
+    {
+      "key": "features",
+      "title": {
+        "en": "Key features",
+        "fr": "Fonctionnalités clés"
+      },
+      "body": {
+        "en": "",
+        "fr": ""
+      },
+      "bullets": {
+        "en": [
+          "JWT authentication, BCrypt password hashing, Employee / Admin roles",
+          "Registration with administrator approval",
+          "Employee portal organized in nine service categories",
+          "Lunch reservations — one per employee per day, enforced by a database constraint",
+          "Meeting orders and breakfast orders",
+          "Dynamic catalogue: the admin creates articles and their configurable options",
+          "Announcements with image and document uploads",
+          "Admin dashboard: daily counters and chart, reservations, orders, announcements, catalogue, configuration, users",
+          "CSV exports of reservations and orders by date range",
+          "Telegram notifications to the cook and to an announcements channel",
+          "Telegram auto-registration during a time-limited window opened by the admin",
+          "Scheduled tasks: daily recap on weekdays at 11:00 and purge of reservations older than 30 days"
+        ],
+        "fr": [
+          "Authentification JWT, hachage BCrypt, rôles Employé / Admin",
+          "Inscription avec validation par un administrateur",
+          "Portail employé organisé en neuf catégories de services",
+          "Réservations du déjeuner — une par employé et par jour, garantie par une contrainte en base",
+          "Commandes de réunion et de petit-déjeuner",
+          "Catalogue dynamique : l'admin crée les articles et leurs options configurables",
+          "Annonces avec images et documents joints",
+          "Tableau de bord admin : compteurs du jour et graphique, réservations, commandes, annonces, catalogue, configuration, utilisateurs",
+          "Exports CSV des réservations et des commandes par plage de dates",
+          "Notifications Telegram au cuisinier et vers un canal d'annonces",
+          "Auto-enregistrement Telegram pendant une fenêtre limitée ouverte par l'admin",
+          "Tâches planifiées : récap quotidien en semaine à 11h et purge des réservations de plus de 30 jours"
+        ]
+      }
+    },
+    {
+      "key": "screenshots",
+      "title": {
+        "en": "Screenshots",
+        "fr": "Captures d'écran"
+      },
+      "body": {
+        "en": "",
+        "fr": ""
+      },
+      "bullets": {
+        "en": [],
+        "fr": []
+      }
+    },
+    {
+      "key": "decisions",
+      "title": {
+        "en": "Engineering decisions",
+        "fr": "Décisions techniques"
+      },
+      "body": {
+        "en": "",
+        "fr": ""
+      },
+      "bullets": {
+        "en": [
+          "Layered backend with DTOs — JPA entities are never exposed by the API (no password leak, no self-assigned role)",
+          "Admin-managed catalogue (articles + options) instead of hard-coded Java enums — new products need no redeploy",
+          "Server-side authorization with method security (@PreAuthorize) — the frontend is never trusted",
+          "Transactional service layer, read-only transactions for queries",
+          "Fault-tolerant notifications — a Telegram error is logged and never cancels the user's reservation",
+          "Runtime configuration stored in the database — Telegram chat IDs change without restarting the app",
+          "Telegram polling only during short admin-activated windows, guarded against overlapping runs",
+          "Integrity enforced by the database (unique reservation per user and day, foreign keys)",
+          "Versioned schema with Flyway migrations",
+          "Nginx reverse proxy — frontend and API share one origin in production",
+          "Multi-stage Docker builds, persistent volumes for data and uploads, secrets in a non-versioned .env"
+        ],
+        "fr": [
+          "Backend en couches avec DTO — les entités JPA ne sont jamais exposées (pas de fuite de mot de passe, pas d'auto-attribution de rôle)",
+          "Catalogue géré par l'admin (articles + options) au lieu d'enums Java figés — un nouveau produit ne demande aucun redéploiement",
+          "Autorisation côté serveur avec la sécurité par méthode (@PreAuthorize) — le frontend n'est jamais considéré comme fiable",
+          "Couche service transactionnelle, transactions en lecture seule pour les consultations",
+          "Notifications tolérantes aux pannes — une erreur Telegram est journalisée et n'annule jamais la réservation",
+          "Configuration stockée en base — les chat_id Telegram changent sans redémarrer l'application",
+          "Polling Telegram uniquement pendant de courtes fenêtres activées par l'admin, protégé contre les exécutions simultanées",
+          "Intégrité garantie par la base (réservation unique par utilisateur et par jour, clés étrangères)",
+          "Schéma versionné avec les migrations Flyway",
+          "Reverse proxy Nginx — frontend et API partagent la même origine en production",
+          "Builds Docker multi-étapes, volumes persistants pour les données et les fichiers, secrets dans un .env non versionné"
+        ]
+      }
+    },
+    {
+      "key": "challenges",
+      "title": {
+        "en": "Challenges",
+        "fr": "Défis rencontrés"
+      },
+      "body": {
+        "en": "",
+        "fr": ""
+      },
+      "bullets": {
+        "en": [
+          "Architecture evolution — from a single-purpose cafeteria app to a multi-category social-services portal",
+          "Refactoring hard-coded enums into a dynamic catalogue with configurable options",
+          "LazyInitializationException — fixed by defining clear read-only transactional boundaries",
+          "Scheduled tasks silently not running — the missing @EnableScheduling",
+          "Foreign-key violations when deleting users — explicit cascade strategy",
+          "Masked errors — a global exception handler returning meaningful responses",
+          "Arabic Telegram messages double-encoded — URL building fixed to encode once",
+          "Flyway baseline failing on a fresh database whose legacy schema had been created by Hibernate",
+          "Docker: CORS after moving to port 80, SPA 404 on refresh (try_files), a BOM breaking nginx.conf, port conflicts",
+          "Migrating real data into the containerized database (pg_dump / pg_restore) and the uploaded files into a volume"
+        ],
+        "fr": [
+          "Évolution de l'architecture — d'une application de buvette à un portail multi-catégories",
+          "Refonte des enums figés en un catalogue dynamique avec options configurables",
+          "LazyInitializationException — corrigée en définissant des frontières transactionnelles claires en lecture seule",
+          "Tâches planifiées qui ne s'exécutaient pas — il manquait @EnableScheduling",
+          "Violations de clés étrangères à la suppression d'un utilisateur — stratégie de cascade explicite",
+          "Erreurs masquées — un gestionnaire global d'exceptions renvoyant des réponses claires",
+          "Messages Telegram en arabe doublement encodés — construction d'URL corrigée pour n'encoder qu'une fois",
+          "Baseline Flyway en échec sur une base neuve dont le schéma historique avait été créé par Hibernate",
+          "Docker : CORS après le passage au port 80, 404 SPA au rafraîchissement (try_files), BOM cassant nginx.conf, conflits de ports",
+          "Migration des données réelles vers la base conteneurisée (pg_dump / pg_restore) et des fichiers vers un volume"
+        ]
+      }
+    },
+    {
+      "key": "testing",
+      "title": {
+        "en": "Testing",
+        "fr": "Tests"
+      },
+      "body": {
+        "en": "",
+        "fr": ""
+      },
+      "bullets": {
+        "en": [
+          "Unit tests with JUnit",
+          "Manual API testing with Swagger UI and Postman",
+          "Local load test with k6 (up to 1,000 virtual users) used to tune the HikariCP connection pool — p95 ≈ 14 ms on the development machine, not a production measurement"
+        ],
+        "fr": [
+          "Tests unitaires avec JUnit",
+          "Tests manuels de l'API avec Swagger UI et Postman",
+          "Test de charge local avec k6 (jusqu'à 1 000 utilisateurs virtuels) pour ajuster le pool de connexions HikariCP — p95 ≈ 14 ms sur la machine de développement, pas une mesure de production"
+        ]
+      }
+    },
+    {
+      "key": "deployment",
+      "title": {
+        "en": "Deployment",
+        "fr": "Déploiement"
+      },
+      "body": {
+        "en": "A first manual installation on the agency's server showed how fragile that approach was: Java version, PostgreSQL setup, environment variables and ports were each a possible point of failure. The whole stack was therefore containerized.\n\nDocker Compose describes three services — PostgreSQL 17, the Spring Boot backend and the Nginx-served frontend — plus two persistent volumes for the database and the uploaded files. Starting the application takes one command, and the project was handed over to my supervisor in that form.",
+        "fr": "Une première installation manuelle sur le serveur de l'agence a montré la fragilité de cette approche : version de Java, configuration de PostgreSQL, variables d'environnement et ports étaient autant de points de défaillance. Toute la stack a donc été conteneurisée.\n\nDocker Compose décrit trois services — PostgreSQL 17, le backend Spring Boot et le frontend servi par Nginx — et deux volumes persistants pour la base et les fichiers téléversés. Le lancement tient en une commande, et c'est sous cette forme que le projet a été remis à mon encadrant."
+      },
+      "bullets": {
+        "en": [],
+        "fr": []
+      }
+    },
+    {
+      "key": "limitations",
+      "title": {
+        "en": "Known limitations",
+        "fr": "Limites connues"
+      },
+      "body": {
+        "en": "",
+        "fr": ""
+      },
+      "bullets": {
+        "en": [
+          "Announcements are still deleted permanently although the model was designed for soft delete",
+          "The announcement expiration date is stored but not enforced by every query",
+          "SQL query logging is still enabled and should be turned off in production",
+          "Automated dependency vulnerability scanning was considered but not kept in the final version"
+        ],
+        "fr": [
+          "Les annonces sont encore supprimées définitivement alors que le modèle prévoyait une suppression logique",
+          "La date d'expiration des annonces est enregistrée mais pas appliquée par toutes les requêtes",
+          "La journalisation des requêtes SQL est encore active et doit être désactivée en production",
+          "L'analyse automatique des vulnérabilités des dépendances a été envisagée mais pas retenue dans la version finale"
+        ]
+      }
+    },
+    {
+      "key": "lessons",
+      "title": {
+        "en": "Lessons learned",
+        "fr": "Ce que j'en retiens"
+      },
+      "body": {
+        "en": "",
+        "fr": ""
+      },
+      "bullets": {
+        "en": [
+          "Model data for change: moving from enums to a configurable catalogue cost a refactor that earlier modeling would have avoided",
+          "Let the database guarantee integrity instead of relying on application checks alone",
+          "Treat external services as unreliable by default",
+          "Containers make an environment reproducible, but data migration remains a separate, deliberate step",
+          "Keeping a written log of every bug and fix made the report, the defense and the handover much easier"
+        ],
+        "fr": [
+          "Modéliser les données pour qu'elles puissent évoluer : passer des enums à un catalogue configurable a coûté une refonte qu'une meilleure modélisation initiale aurait évitée",
+          "Laisser la base de données garantir l'intégrité plutôt que de compter uniquement sur l'application",
+          "Considérer les services externes comme non fiables par défaut",
+          "Les conteneurs rendent un environnement reproductible, mais la migration des données reste une étape à part",
+          "Tenir un journal écrit de chaque bug et de sa correction a beaucoup facilité le rapport, la soutenance et la passation"
+        ]
+      }
+    },
+    {
+      "key": "future",
+      "title": {
+        "en": "Future improvements",
+        "fr": "Améliorations possibles"
+      },
+      "body": {
+        "en": "",
+        "fr": ""
+      },
+      "bullets": {
+        "en": [
+          "Apply soft delete and the expiration date consistently for announcements",
+          "Link each employee account to their own Telegram chat for personal notifications",
+          "Add health checks so services start only when their dependencies are ready",
+          "Add dependency vulnerability scanning and a CI pipeline running the tests"
+        ],
+        "fr": [
+          "Appliquer la suppression logique et la date d'expiration des annonces de façon cohérente",
+          "Relier chaque compte employé à son propre chat Telegram pour des notifications personnelles",
+          "Ajouter des contrôles de santé pour que chaque service démarre quand ses dépendances sont prêtes",
+          "Ajouter l'analyse des vulnérabilités des dépendances et une CI qui exécute les tests"
+        ]
+      }
+    },
+    {
+      "key": "results",
+      "title": {
+        "en": "Results",
+        "fr": "Résultats"
+      },
+      "body": {
+        "en": "",
+        "fr": ""
+      },
+      "bullets": {
+        "en": [
+          "A working, containerized application handed over to my internship supervisor",
+          "Technical documentation, a start-up and troubleshooting guide, and the internship report",
+          "Internship defense passed"
+        ],
+        "fr": [
+          "Une application fonctionnelle et conteneurisée remise à mon encadrant de stage",
+          "Documentation technique, guide de démarrage et de dépannage, et rapport de stage",
+          "Soutenance de stage validée"
+        ]
+      }
+    }
+  ],
+  "pending": []
+}

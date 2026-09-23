@@ -1,0 +1,79 @@
+{
+  "title": "Moto Shop",
+  "order": 1,
+  "featured": false,
+  "subtitle": {
+    "en": "Motorcycle e-commerce platform",
+    "fr": "Plateforme e-commerce de motos"
+  },
+  "summary": {
+    "en": "A full-stack e-commerce website for selling motorcycles, built with Django: catalogue, shopping cart and order management.",
+    "fr": "Un site e-commerce full-stack de vente de motos développé avec Django : catalogue, panier et gestion des commandes."
+  },
+  "context": "academic",
+  "period": {
+    "en": "",
+    "fr": ""
+  },
+  "role": {},
+  "stack": [
+    "Python",
+    "Django",
+    "HTML/CSS",
+    "JavaScript"
+  ],
+  "thumbnailAlt": {
+    "en": "Moto Shop — home page",
+    "fr": "Moto Shop — page d'accueil"
+  },
+  "repoVisibility": "unknown",
+  "highlights": {
+    "en": [],
+    "fr": []
+  },
+  "screenshots": [],
+  "diagrams": [],
+  "sections": [
+    {
+      "key": "overview",
+      "title": {
+        "en": "Overview",
+        "fr": "Vue d'ensemble"
+      },
+      "body": {
+        "en": "An academic full-stack e-commerce project for selling motorcycles, built with Python and Django.",
+        "fr": "Un projet académique d'e-commerce full-stack pour la vente de motos, développé avec Python et Django."
+      },
+      "bullets": {
+        "en": [],
+        "fr": []
+      }
+    },
+    {
+      "key": "features",
+      "title": {
+        "en": "Features",
+        "fr": "Fonctionnalités"
+      },
+      "body": {},
+      "bullets": {
+        "en": [
+          "Motorcycle catalogue",
+          "Shopping cart",
+          "Order management"
+        ],
+        "fr": [
+          "Catalogue de motos",
+          "Panier",
+          "Gestion des commandes"
+        ]
+      }
+    }
+  ],
+  "pending": [
+    "ADD PERIOD",
+    "CONFIRM DATABASE (SQLite / MySQL)",
+    "ADD SCREENSHOTS",
+    "ADD GITHUB LINK (if public)"
+  ]
+}

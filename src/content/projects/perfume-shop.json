@@ -1,0 +1,83 @@
+{
+  "title": "Parfums Shop",
+  "order": 2,
+  "featured": false,
+  "subtitle": {
+    "en": "Perfume e-commerce platform",
+    "fr": "Plateforme e-commerce de parfums"
+  },
+  "summary": {
+    "en": "An e-commerce platform for selling perfumes, built with PHP, with user authentication and product management.",
+    "fr": "Une plateforme e-commerce de vente de parfums développée en PHP, avec authentification et gestion des produits."
+  },
+  "context": "academic",
+  "period": {
+    "en": "",
+    "fr": ""
+  },
+  "role": {
+    "en": "",
+    "fr": ""
+  },
+  "stack": [
+    "PHP"
+  ],
+  "thumbnail": null,
+  "thumbnailAlt": {
+    "en": "Parfums Shop — home page",
+    "fr": "Parfums Shop — page d'accueil"
+  },
+  "repoVisibility": "unknown",
+  "repoUrl": "",
+  "liveUrl": "",
+  "highlights": {
+    "en": [],
+    "fr": []
+  },
+  "screenshots": [],
+  "diagrams": [],
+  "sections": [
+    {
+      "key": "overview",
+      "title": {
+        "en": "Overview",
+        "fr": "Vue d'ensemble"
+      },
+      "body": {
+        "en": "An academic e-commerce platform for selling perfumes, developed in PHP.",
+        "fr": "Une plateforme e-commerce académique de vente de parfums, développée en PHP."
+      },
+      "bullets": {
+        "en": [],
+        "fr": []
+      }
+    },
+    {
+      "key": "features",
+      "title": {
+        "en": "Features",
+        "fr": "Fonctionnalités"
+      },
+      "body": {
+        "en": "",
+        "fr": ""
+      },
+      "bullets": {
+        "en": [
+          "User authentication",
+          "Product management"
+        ],
+        "fr": [
+          "Authentification des utilisateurs",
+          "Gestion des produits"
+        ]
+      }
+    }
+  ],
+  "pending": [
+    "ADD PERIOD",
+    "CONFIRM STACK (plain PHP or Symfony, database)",
+    "ADD SCREENSHOTS",
+    "ADD GITHUB LINK (if public)"
+  ]
+}

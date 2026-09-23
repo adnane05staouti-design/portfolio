@@ -1,0 +1,61 @@
+{
+  "title": "Restaurant Booking",
+  "order": 4,
+  "featured": false,
+  "subtitle": {
+    "en": "Restaurant reservation system in C",
+    "fr": "Système de réservation de restaurant en C"
+  },
+  "summary": {
+    "en": "A management system in C for a restaurant's tables, reservations and customers.",
+    "fr": "Un système de gestion en langage C pour les tables, les réservations et les clients d'un restaurant."
+  },
+  "context": "academic",
+  "period": {
+    "en": "",
+    "fr": ""
+  },
+  "role": {
+    "en": "",
+    "fr": ""
+  },
+  "stack": [
+    "C"
+  ],
+  "thumbnail": null,
+  "thumbnailAlt": {
+    "en": "Restaurant Booking — screenshot",
+    "fr": "Restaurant Booking — capture"
+  },
+  "repoVisibility": "unknown",
+  "repoUrl": "",
+  "liveUrl": "",
+  "highlights": {
+    "en": [],
+    "fr": []
+  },
+  "screenshots": [],
+  "diagrams": [],
+  "sections": [
+    {
+      "key": "overview",
+      "title": {
+        "en": "Overview",
+        "fr": "Vue d'ensemble"
+      },
+      "body": {
+        "en": "An academic project in C managing a restaurant's tables, reservations and customers.",
+        "fr": "Un projet académique en C qui gère les tables, les réservations et les clients d'un restaurant."
+      },
+      "bullets": {
+        "en": [],
+        "fr": []
+      }
+    }
+  ],
+  "pending": [
+    "ADD PERIOD",
+    "ADD SCREENSHOTS",
+    "ADD GITHUB LINK (if public)"
+  ]
+}

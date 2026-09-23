@@ -1,0 +1,64 @@
+{
+  "title": "Football Booking",
+  "order": 3,
+  "featured": false,
+  "subtitle": {
+    "en": "Football pitch reservation web app",
+    "fr": "Application web de réservation de terrains de football"
+  },
+  "summary": {
+    "en": "A web application to manage time slots and book football pitches online.",
+    "fr": "Une application web de gestion des créneaux et de réservation de terrains de football en ligne."
+  },
+  "context": "academic",
+  "period": {
+    "en": "",
+    "fr": ""
+  },
+  "role": {
+    "en": "",
+    "fr": ""
+  },
+  "stack": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "thumbnail": null,
+  "thumbnailAlt": {
+    "en": "Football Booking — booking page",
+    "fr": "Football Booking — page de réservation"
+  },
+  "repoVisibility": "unknown",
+  "repoUrl": "",
+  "liveUrl": "",
+  "highlights": {
+    "en": [],
+    "fr": []
+  },
+  "screenshots": [],
+  "diagrams": [],
+  "sections": [
+    {
+      "key": "overview",
+      "title": {
+        "en": "Overview",
+        "fr": "Vue d'ensemble"
+      },
+      "body": {
+        "en": "An academic web application for managing time slots and booking football pitches online, built with HTML, CSS and JavaScript.",
+        "fr": "Une application web académique de gestion des créneaux et de réservation de terrains de football en ligne, développée en HTML, CSS et JavaScript."
+      },
+      "bullets": {
+        "en": [],
+        "fr": []
+      }
+    }
+  ],
+  "pending": [
+    "ADD PERIOD",
+    "ADD FEATURES",
+    "ADD SCREENSHOTS",
+    "ADD GITHUB LINK (if public)"
+  ]
+}

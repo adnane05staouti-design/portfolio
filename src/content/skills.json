@@ -1,0 +1,366 @@
+{
+  "groups": [
+    {
+      "title": {
+        "en": "Languages",
+        "fr": "Langages"
+      },
+      "items": [
+        {
+          "name": "Java",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        },
+        {
+          "name": "Python",
+          "usedIn": [
+            "moto-shop"
+          ]
+        },
+        {
+          "name": "JavaScript",
+          "usedIn": [
+            "aos-abhbc",
+            "moto-shop",
+            "football-booking"
+          ]
+        },
+        {
+          "name": "PHP",
+          "usedIn": [
+            "perfume-shop"
+          ]
+        },
+        {
+          "name": "SQL",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        },
+        {
+          "name": "C",
+          "usedIn": [
+            "restaurant-booking"
+          ]
+        },
+        {
+          "name": "C++",
+          "usedIn": [
+            "speed-radar"
+          ]
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Backend",
+        "fr": "Backend"
+      },
+      "items": [
+        {
+          "name": "Spring Boot",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        },
+        {
+          "name": "Spring Security",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        },
+        {
+          "name": "Spring Data JPA / Hibernate",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        },
+        {
+          "name": "REST APIs",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        },
+        {
+          "name": "Maven",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        },
+        {
+          "name": "Django",
+          "usedIn": [
+            "moto-shop"
+          ]
+        },
+        {
+          "name": "Symfony",
+          "usedIn": []
+        },
+        {
+          "name": "Node.js",
+          "usedIn": []
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Frontend",
+        "fr": "Frontend"
+      },
+      "items": [
+        {
+          "name": "React",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        },
+        {
+          "name": "Vite",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        },
+        {
+          "name": "React Router",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        },
+        {
+          "name": "Axios",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        },
+        {
+          "name": "HTML",
+          "usedIn": [
+            "aos-abhbc",
+            "moto-shop",
+            "football-booking"
+          ]
+        },
+        {
+          "name": "CSS",
+          "usedIn": [
+            "aos-abhbc",
+            "moto-shop",
+            "football-booking"
+          ]
+        },
+        {
+          "name": "Bootstrap",
+          "usedIn": []
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Databases",
+        "fr": "Bases de données"
+      },
+      "items": [
+        {
+          "name": "PostgreSQL",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        },
+        {
+          "name": "MySQL",
+          "usedIn": []
+        },
+        {
+          "name": "SQL Server",
+          "usedIn": []
+        },
+        {
+          "name": "SQLite",
+          "usedIn": []
+        },
+        {
+          "name": "PL/SQL",
+          "usedIn": []
+        },
+        {
+          "name": "T-SQL",
+          "usedIn": []
+        },
+        {
+          "name": "Flyway",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Software engineering",
+        "fr": "Génie logiciel"
+      },
+      "items": [
+        {
+          "name": "OOP",
+          "usedIn": []
+        },
+        {
+          "name": "Design Patterns",
+          "usedIn": []
+        },
+        {
+          "name": "Layered architecture",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        },
+        {
+          "name": "UML",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        },
+        {
+          "name": "MERISE",
+          "usedIn": []
+        },
+        {
+          "name": "Agile",
+          "usedIn": []
+        },
+        {
+          "name": "JUnit",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        },
+        {
+          "name": "k6",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        },
+        {
+          "name": "Swagger / OpenAPI",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Tools & DevOps",
+        "fr": "Outils & DevOps"
+      },
+      "items": [
+        {
+          "name": "Git",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        },
+        {
+          "name": "GitHub",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        },
+        {
+          "name": "Docker",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        },
+        {
+          "name": "Docker Compose",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        },
+        {
+          "name": "Nginx",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        },
+        {
+          "name": "Postman",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        },
+        {
+          "name": "IntelliJ IDEA",
+          "usedIn": [
+            "aos-abhbc"
+          ]
+        },
+        {
+          "name": "VS Code",
+          "usedIn": []
+        },
+        {
+          "name": "Linux / Bash",
+          "usedIn": []
+        },
+        {
+          "name": "Arduino",
+          "usedIn": [
+            "speed-radar"
+          ]
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Networking",
+        "fr": "Réseaux"
+      },
+      "items": [
+        {
+          "name": "OSI / TCP-IP",
+          "usedIn": []
+        },
+        {
+          "name": "IPv4",
+          "usedIn": []
+        },
+        {
+          "name": "Routing",
+          "usedIn": []
+        },
+        {
+          "name": "FLSM / VLSM",
+          "usedIn": []
+        },
+        {
+          "name": "VLAN",
+          "usedIn": []
+        },
+        {
+          "name": "HDLC",
+          "usedIn": []
+        },
+        {
+          "name": "DNS",
+          "usedIn": []
+        },
+        {
+          "name": "ARP",
+          "usedIn": []
+        },
+        {
+          "name": "STP",
+          "usedIn": []
+        },
+        {
+          "name": "VPN",
+          "usedIn": []
+        }
+      ]
+    }
+  ]
+}

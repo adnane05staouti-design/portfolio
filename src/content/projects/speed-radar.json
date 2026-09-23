@@ -1,0 +1,63 @@
+{
+  "title": "Speed Radar",
+  "order": 5,
+  "featured": false,
+  "subtitle": {
+    "en": "Embedded vehicle speed detector",
+    "fr": "Radar de vitesse embarqué"
+  },
+  "summary": {
+    "en": "An embedded Arduino device that detects and measures vehicle speed in real time.",
+    "fr": "Un dispositif embarqué sur Arduino qui détecte et mesure la vitesse des véhicules en temps réel."
+  },
+  "context": "academic",
+  "period": {
+    "en": "",
+    "fr": ""
+  },
+  "role": {
+    "en": "",
+    "fr": ""
+  },
+  "stack": [
+    "Arduino",
+    "C++"
+  ],
+  "thumbnail": null,
+  "thumbnailAlt": {
+    "en": "Speed Radar — Arduino prototype",
+    "fr": "Radar de vitesse — prototype Arduino"
+  },
+  "repoVisibility": "unknown",
+  "repoUrl": "",
+  "liveUrl": "",
+  "highlights": {
+    "en": [],
+    "fr": []
+  },
+  "screenshots": [],
+  "diagrams": [],
+  "sections": [
+    {
+      "key": "overview",
+      "title": {
+        "en": "Overview",
+        "fr": "Vue d'ensemble"
+      },
+      "body": {
+        "en": "An academic embedded-systems project: an Arduino device programmed in C++ that detects vehicles and measures their speed in real time.",
+        "fr": "Un projet académique de systèmes embarqués : un dispositif Arduino programmé en C++ qui détecte les véhicules et mesure leur vitesse en temps réel."
+      },
+      "bullets": {
+        "en": [],
+        "fr": []
+      }
+    }
+  ],
+  "pending": [
+    "ADD PERIOD",
+    "ADD SENSORS / COMPONENTS USED",
+    "ADD PHOTO OR VIDEO",
+    "ADD GITHUB LINK (if public)"
+  ]
+}

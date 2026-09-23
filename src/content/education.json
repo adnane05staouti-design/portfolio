@@ -1,0 +1,74 @@
+{
+  "items": [
+    {
+      "school": "EMSI",
+      "schoolFull": "École Marocaine des Sciences de l'Ingénieur",
+      "degree": {
+        "en": "Engineering degree — Computer Engineering & Networks (IIR)",
+        "fr": "Cycle ingénieur — Ingénierie Informatique et Réseaux (IIR)"
+      },
+      "period": {
+        "en": "2023 – 2028 (expected)",
+        "fr": "2023 – 2028 (prévu)"
+      },
+      "location": {
+        "en": "Casablanca, Morocco",
+        "fr": "Casablanca, Maroc"
+      },
+      "status": {
+        "en": "Currently in 4th year",
+        "fr": "Actuellement en 4e année"
+      },
+      "coursework": {
+        "en": [
+          "Programming",
+          "Object-Oriented Programming",
+          "Algorithms & Data Structures",
+          "Databases",
+          "Web Development",
+          "Software Engineering",
+          "UML & MERISE",
+          "Computer Networks",
+          "Linux",
+          "Applied Mathematics"
+        ],
+        "fr": [
+          "Programmation",
+          "Programmation orientée objet",
+          "Algorithmique et structures de données",
+          "Bases de données",
+          "Développement web",
+          "Génie logiciel",
+          "UML et MERISE",
+          "Réseaux informatiques",
+          "Linux",
+          "Mathématiques appliquées"
+        ]
+      }
+    },
+    {
+      "school": "Groupe Scolaire Ghaza",
+      "schoolFull": "",
+      "degree": {
+        "en": "Scientific Baccalaureate — Physical Sciences",
+        "fr": "Baccalauréat scientifique — option Sciences Physiques"
+      },
+      "period": {
+        "en": "2022 – 2023",
+        "fr": "2022 – 2023"
+      },
+      "location": {
+        "en": "Casablanca, Morocco",
+        "fr": "Casablanca, Maroc"
+      },
+      "status": {
+        "en": "Obtained",
+        "fr": "Obtenu"
+      },
+      "coursework": {
+        "en": [],
+        "fr": []
+      }
+    }
+  ]
+}

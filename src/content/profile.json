@@ -1,0 +1,110 @@
+{
+  "name": "Adnane Staouti",
+  "role": {
+    "en": "Computer Engineering Student",
+    "fr": "Élève ingénieur en informatique"
+  },
+  "focus": {
+    "en": "Full-Stack Development · Software Engineering",
+    "fr": "Développement Full-Stack · Génie logiciel"
+  },
+  "intro": {
+    "en": "I design and build practical software solutions while developing strong foundations in software engineering, backend systems and modern web technologies.",
+    "fr": "Je conçois et développe des solutions logicielles concrètes, tout en construisant des bases solides en génie logiciel, en systèmes backend et en technologies web modernes."
+  },
+  "location": {
+    "en": "Casablanca, Morocco",
+    "fr": "Casablanca, Maroc"
+  },
+  "school": "EMSI",
+  "schoolFull": "École Marocaine des Sciences de l'Ingénieur",
+  "program": {
+    "en": "Computer Engineering & Networks (IIR)",
+    "fr": "Ingénierie Informatique et Réseaux (IIR)"
+  },
+  "level": {
+    "en": "4th year (2026–2027)",
+    "fr": "4e année (2026–2027)"
+  },
+  "openToWork": false,
+  "availability": {},
+  "spokenLanguages": {
+    "en": "Arabic (native) · French (intermediate) · English (intermediate)",
+    "fr": "Arabe (maternelle) · Français (intermédiaire) · Anglais (intermédiaire)"
+  },
+  "email": "adnane05staouti@gmail.com",
+  "cv": "/cv/cv.pdf",
+  "photo": "/images/profile/photo.jpg",
+  "github": "https://github.com/adnane05staouti-design",
+  "linkedin": "https://www.linkedin.com/in/adnane-staouti/",
+  "aboutTitle": {
+    "en": "Building complete systems, one layer at a time.",
+    "fr": "Construire des systèmes complets, couche par couche."
+  },
+  "aboutBody": {
+    "en": "I'm a fourth-year Computer Engineering student at EMSI Casablanca. What interests me is the whole path of a feature: the interface a user touches, the API that validates the request, the database that keeps it consistent, and the infrastructure that runs it.\n\nMy internship project, AOS ABHBC, is where this came together — a Spring Boot and React platform that I analysed, designed, built, containerized and handed over. I'm now deepening the same foundations: backend architecture, data modeling, networking and DevOps practices.",
+    "fr": "Je suis élève ingénieur en 4e année d'Ingénierie Informatique et Réseaux à l'EMSI Casablanca. Ce qui m'intéresse, c'est le parcours complet d'une fonctionnalité : l'interface que l'utilisateur manipule, l'API qui valide la requête, la base de données qui garantit la cohérence et l'infrastructure qui fait tourner le tout.\n\nMon projet de stage, AOS ABHBC, a tout réuni — une plateforme Spring Boot et React que j'ai analysée, conçue, développée, conteneurisée puis remise. Je consolide aujourd'hui ces mêmes bases : architecture backend, modélisation des données, réseaux et pratiques DevOps."
+  },
+  "interests": [
+    {
+      "title": {
+        "en": "Backend architecture",
+        "fr": "Architecture backend"
+      },
+      "text": {
+        "en": "Layered services, clear boundaries, DTOs, transactions.",
+        "fr": "Services en couches, frontières claires, DTO, transactions."
+      }
+    },
+    {
+      "title": {
+        "en": "APIs",
+        "fr": "API"
+      },
+      "text": {
+        "en": "REST design, authentication, authorization, error handling.",
+        "fr": "Conception REST, authentification, autorisation, gestion des erreurs."
+      }
+    },
+    {
+      "title": {
+        "en": "Databases",
+        "fr": "Bases de données"
+      },
+      "text": {
+        "en": "Relational modeling, constraints, migrations, SQL.",
+        "fr": "Modélisation relationnelle, contraintes, migrations, SQL."
+      }
+    },
+    {
+      "title": {
+        "en": "Full-stack apps",
+        "fr": "Applications full-stack"
+      },
+      "text": {
+        "en": "React interfaces wired to real backends.",
+        "fr": "Des interfaces React reliées à de vrais backends."
+      }
+    },
+    {
+      "title": {
+        "en": "Software design",
+        "fr": "Conception logicielle"
+      },
+      "text": {
+        "en": "UML, MERISE, OOP and design patterns.",
+        "fr": "UML, MERISE, POO et design patterns."
+      }
+    },
+    {
+      "title": {
+        "en": "DevOps & networking",
+        "fr": "DevOps & réseaux"
+      },
+      "text": {
+        "en": "Docker, Nginx, Linux, TCP/IP, routing.",
+        "fr": "Docker, Nginx, Linux, TCP/IP, routage."
+      }
+    }
+  ]
+}

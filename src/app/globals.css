@@ -1,0 +1,184 @@
+@import "tailwindcss";
+
+/* Theme is driven by data-theme on <html>; dark is the default. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* ------------------------------------------------------------------ */
+/* Design tokens                                                       */
+/* ------------------------------------------------------------------ */
+:root,
+[data-theme="dark"] {
+  --bg: #0a0b0d;
+  --bg-elevated: #0f1114;
+  --surface: #13161a;
+  --surface-2: #181c21;
+  --border: rgb(255 255 255 / 0.08);
+  --border-strong: rgb(255 255 255 / 0.14);
+  --text: #ecedef;
+  --text-muted: #9ba1ab;
+  --text-subtle: #8a909a;
+  --accent: #8ab4ff;
+  --accent-strong: #b3ceff;
+  --accent-soft: rgb(138 180 255 / 0.12);
+  --accent-contrast: #0a0b0d;
+  --success: #6fd3a6;
+  --danger: #ff8f8f;
+  --grid-line: rgb(255 255 255 / 0.035);
+  --shadow-card: 0 1px 0 rgb(255 255 255 / 0.04) inset, 0 20px 40px -24px rgb(0 0 0 / 0.8);
+  --glow: radial-gradient(60% 60% at 50% 0%, rgb(138 180 255 / 0.14), transparent 70%);
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  --bg: #f7f7f5;
+  --bg-elevated: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f1f2f0;
+  --border: rgb(15 18 22 / 0.09);
+  --border-strong: rgb(15 18 22 / 0.16);
+  --text: #111418;
+  --text-muted: #4d535c;
+  --text-subtle: #5f656e;
+  --accent: #2f5bd3;
+  --accent-strong: #1f46b3;
+  --accent-soft: rgb(47 91 211 / 0.08);
+  --accent-contrast: #ffffff;
+  --success: #17804f;
+  --danger: #c23b3b;
+  --grid-line: rgb(15 18 22 / 0.045);
+  --shadow-card: 0 1px 2px rgb(15 18 22 / 0.04), 0 16px 32px -20px rgb(15 18 22 / 0.18);
+  --glow: radial-gradient(60% 60% at 50% 0%, rgb(47 91 211 / 0.08), transparent 70%);
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--border);
+  --color-line-strong: var(--border-strong);
+  --color-fg: var(--text);
+  --color-muted: var(--text-muted);
+  --color-subtle: var(--text-subtle);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-contrast: var(--accent-contrast);
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+
+  /* Fluid type scale */
+  --text-display: clamp(2.75rem, 1.6rem + 5.2vw, 6rem);
+  --text-display--line-height: 0.98;
+  --text-display--letter-spacing: -0.045em;
+  --text-h2: clamp(2rem, 1.35rem + 2.6vw, 3.4rem);
+  --text-h2--line-height: 1.05;
+  --text-h2--letter-spacing: -0.035em;
+  --text-h3: clamp(1.25rem, 1.1rem + 0.6vw, 1.6rem);
+  --text-h3--line-height: 1.25;
+  --text-h3--letter-spacing: -0.02em;
+  --text-lead: clamp(1.05rem, 0.98rem + 0.35vw, 1.25rem);
+  --text-lead--line-height: 1.6;
+
+  --radius-card: 1.25rem;
+  --shadow-card: var(--shadow-card);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ------------------------------------------------------------------ */
+/* Base                                                                */
+/* ------------------------------------------------------------------ */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv11";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Utilities                                                           */
+/* ------------------------------------------------------------------ */
+@utility container-page {
+  width: 100%;
+  max-width: 76rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  @media (width >= 48rem) {
+    padding-inline: 2rem;
+  }
+}
+
+@utility bg-grid {
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+@utility card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+@utility eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+/* Animated dashes along diagram connections */
+@keyframes dash {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+.flow-line {
+  stroke-dasharray: 4 8;
+  animation: dash 1.6s linear infinite;
+}

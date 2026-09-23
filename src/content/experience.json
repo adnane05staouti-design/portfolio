@@ -1,0 +1,53 @@
+{
+  "items": [
+    {
+      "role": {
+        "en": "Software Development Intern",
+        "fr": "Stagiaire en développement logiciel"
+      },
+      "company": "ABHBC",
+      "companyFull": "Agence du Bassin Hydraulique du Bouregreg et de la Chaouia",
+      "period": {
+        "en": "July – August 2026",
+        "fr": "Juillet – août 2026"
+      },
+      "location": {
+        "en": "Morocco",
+        "fr": "Maroc"
+      },
+      "summary": {
+        "en": "Designed and built AOS ABHBC, an internal web platform that centralizes the agency's cafeteria and social-services processes — from requirements to a containerized deployment handed over to my supervisor.",
+        "fr": "Conception et développement d'AOS ABHBC, une plateforme web interne qui centralise la buvette et les œuvres sociales de l'agence — de l'analyse des besoins jusqu'au déploiement conteneurisé remis à mon encadrant."
+      },
+      "tasks": {
+        "en": [
+          "Gathered requirements with internal stakeholders and modeled the system in UML",
+          "Built a layered Spring Boot REST API with JWT authentication and role-based authorization",
+          "Designed the PostgreSQL schema and versioned it with Flyway migrations",
+          "Developed the React employee portal and a multi-tab admin dashboard",
+          "Integrated the Telegram Bot API for notifications, daily recaps and auto-registration",
+          "Containerized the stack with Docker Compose and Nginx, then migrated the real data",
+          "Tested with JUnit and a local k6 load test; wrote the technical documentation and internship report"
+        ],
+        "fr": [
+          "Recueil des besoins auprès des utilisateurs internes et modélisation UML du système",
+          "Développement d'une API REST Spring Boot en couches avec authentification JWT et autorisation par rôle",
+          "Conception du schéma PostgreSQL, versionné avec des migrations Flyway",
+          "Développement du portail employé en React et d'un tableau de bord admin à onglets",
+          "Intégration de l'API Telegram Bot : notifications, récap quotidien et auto-enregistrement",
+          "Conteneurisation avec Docker Compose et Nginx, puis migration des données réelles",
+          "Tests JUnit et test de charge local k6 ; rédaction de la documentation technique et du rapport de stage"
+        ]
+      },
+      "stack": [
+        "Java 21",
+        "Spring Boot",
+        "React",
+        "PostgreSQL",
+        "Docker",
+        "Telegram API"
+      ],
+      "project": "aos-abhbc"
+    }
+  ]
+}
