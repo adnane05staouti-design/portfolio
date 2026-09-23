@@ -86,7 +86,7 @@ export default async function ProjectPage({ params }: PageProps<"/[lang]/project
           </ul>
         );
       case "screenshots":
-        return <Gallery items={project.screenshots.map((img) => toGalleryItem(img, lang))} labels={galleryLabels} />;
+        return <Gallery items={project.screenshots.map((img) => toGalleryItem(img, lang))} labels={galleryLabels} frameUrl={project.slug} />;
       case "uml":
         return <Gallery items={project.diagrams.map((img) => toGalleryItem(img, lang))} labels={galleryLabels} variant="plain" fit="contain" />;
       default:
@@ -114,14 +114,18 @@ export default async function ProjectPage({ params }: PageProps<"/[lang]/project
           </Reveal>
 
           <Reveal delay={0.1}>
-            <dl className="mt-12 grid gap-px overflow-hidden rounded-[var(--radius-card)] border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
+            <dl
+              className={`mt-12 grid gap-px overflow-hidden rounded-[var(--radius-card)] border border-line bg-line sm:grid-cols-2 ${project.role?.[lang] ? "lg:grid-cols-4" : "max-w-2xl"}`}
+            >
               <Meta label={cs.context}>
                 {isPlaceholder(context) ? <PlaceholderTag value={context} /> : dict.projects.context[context]}
               </Meta>
               <Meta label={cs.period}>{isPlaceholder(period) ? <PlaceholderTag value={period} /> : period[lang]}</Meta>
-              <Meta label={cs.role} className="lg:col-span-2">
-                {project.role?.[lang] ?? "—"}
-              </Meta>
+              {project.role?.[lang] && (
+                <Meta label={cs.role} className="lg:col-span-2">
+                  {project.role[lang]}
+                </Meta>
+              )}
             </dl>
           </Reveal>
 

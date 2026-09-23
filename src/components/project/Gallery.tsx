@@ -23,9 +23,11 @@ type Props = {
   columns?: 1 | 2;
   /** "cover" crops screenshots from the top; "contain" shows whole diagrams on white, unrecompressed. */
   fit?: "cover" | "contain";
+  /** Label shown in the browser frame's address bar. */
+  frameUrl?: string;
 };
 
-export function Gallery({ items, labels, variant = "browser", columns = 2, fit = "cover" }: Props) {
+export function Gallery({ items, labels, variant = "browser", columns = 2, fit = "cover", frameUrl }: Props) {
   const [open, setOpen] = useState<number | null>(null);
   const available = items.map((item, i) => ({ item, i })).filter(({ item }) => item.src);
 
@@ -67,7 +69,7 @@ export function Gallery({ items, labels, variant = "browser", columns = 2, fit =
           return (
             <li key={i} className={columns === 2 && items.length % 2 === 1 && i === 0 ? "md:col-span-2" : ""}>
               <figure>
-                {variant === "browser" ? <BrowserFrame>{media}</BrowserFrame> : <div className="overflow-hidden rounded-xl border border-line-strong">{media}</div>}
+                {variant === "browser" ? <BrowserFrame url={frameUrl}>{media}</BrowserFrame> : <div className="overflow-hidden rounded-xl border border-line-strong">{media}</div>}
                 {item.caption && <figcaption className="mt-3 text-sm text-muted">{item.caption}</figcaption>}
               </figure>
             </li>

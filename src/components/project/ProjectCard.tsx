@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useMotionTemplate, useMotionValue, useReducedMotion, useSpring, useTransform } from "motion/react";
-import { ArrowUpRight, Code2, ImageIcon } from "lucide-react";
+import { ArrowUpRight, Code2 } from "lucide-react";
 import type { PointerEvent } from "react";
 import { Badge } from "@/components/ui/Badge";
 import { PlaceholderTag } from "@/components/ui/Placeholder";
@@ -65,9 +65,11 @@ export function ProjectCard({ project, locale, labels }: Props) {
             className="object-cover object-top transition-transform duration-700 ease-out-expo group-hover:scale-[1.03]"
           />
         ) : (
-          <div className="bg-grid flex h-full flex-col items-center justify-center gap-3 p-4 text-center">
-            <ImageIcon size={22} className="text-subtle" aria-hidden="true" />
-            {isPlaceholder(project.thumbnail.src) && <PlaceholderTag value={project.thumbnail.src} />}
+          // No screenshot for this project: a typographic tile built from its stack.
+          <div aria-hidden="true" className="bg-grid relative flex h-full flex-col items-center justify-center gap-4 p-6 text-center">
+            <div className="absolute inset-0" style={{ background: "radial-gradient(60% 60% at 50% 40%, var(--accent-soft), transparent 70%)" }} />
+            <Code2 size={26} className="relative text-accent" />
+            <p className="relative font-mono text-sm tracking-wide text-muted">{project.stack.slice(0, 3).join(" · ")}</p>
           </div>
         )}
       </div>

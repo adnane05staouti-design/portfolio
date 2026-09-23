@@ -3,39 +3,165 @@
   "order": 2,
   "featured": false,
   "subtitle": {
-    "en": "Perfume e-commerce platform",
-    "fr": "Plateforme e-commerce de parfums"
+    "en": "Perfume e-commerce website in PHP and MySQL",
+    "fr": "Site e-commerce de vente de parfums en PHP et MySQL"
   },
   "summary": {
-    "en": "An e-commerce platform for selling perfumes, built with PHP, with user authentication and product management.",
-    "fr": "Une plateforme e-commerce de vente de parfums développée en PHP, avec authentification et gestion des produits."
+    "en": "Team end-of-year project: a perfume shop with men's and women's collections, promotional bundles, a session cart with free delivery from 1,700 MAD, a checkout form and an admin area for products, offers and orders.",
+    "fr": "Projet de fin d'année en équipe : une boutique de parfums avec collections homme et femme, offres groupées, panier en session avec livraison offerte dès 1 700 MAD, formulaire de commande et espace administrateur pour les produits, les offres et les commandes."
   },
   "context": "academic",
   "period": {
-    "en": "",
-    "fr": ""
+    "en": "Semester 2, 2025–2026",
+    "fr": "Semestre 2, 2025-2026"
   },
   "role": {
-    "en": "",
-    "fr": ""
+    "en": "Team project — end-of-year project at EMSI",
+    "fr": "Projet d'équipe — projet de fin d'année à l'EMSI"
   },
   "stack": [
-    "PHP"
+    "PHP",
+    "MySQL",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "XAMPP",
+    "phpMyAdmin"
   ],
-  "thumbnail": null,
+  "thumbnail": "/images/projects/perfume-shop/home.webp",
   "thumbnailAlt": {
-    "en": "Parfums Shop — home page",
-    "fr": "Parfums Shop — page d'accueil"
+    "en": "Parfum Shop — home page with the men, women and special offers collections",
+    "fr": "Parfum Shop — page d'accueil avec les collections homme, femme et offres spéciales"
   },
   "repoVisibility": "unknown",
   "repoUrl": "",
   "liveUrl": "",
   "highlights": {
-    "en": [],
-    "fr": []
+    "en": [
+      "Promotional offers that bundle several perfumes, with the discount computed automatically",
+      "Cart with +/− quantities and delivery fees (free from 1,700 MAD)",
+      "Admin area: products, offers and order status"
+    ],
+    "fr": [
+      "Offres promotionnelles regroupant plusieurs parfums, avec réduction calculée automatiquement",
+      "Panier avec quantités +/− et frais de livraison (offerts dès 1 700 MAD)",
+      "Espace administrateur : produits, offres et statut des commandes"
+    ]
   },
-  "screenshots": [],
-  "diagrams": [],
+  "screenshots": [
+    {
+      "image": "/images/projects/perfume-shop/home.webp",
+      "alt": {
+        "en": "Parfum Shop home page — hero banner and the men, women and special offers collections",
+        "fr": "Page d'accueil de Parfum Shop — bannière et collections homme, femme et offres spéciales"
+      },
+      "caption": {
+        "en": "Home page and collections",
+        "fr": "Page d'accueil et collections"
+      }
+    },
+    {
+      "image": "/images/projects/perfume-shop/catalogue.webp",
+      "alt": {
+        "en": "Perfume catalogue displayed as a grid of product cards with prices in MAD",
+        "fr": "Catalogue des parfums sous forme de grille de cartes avec les prix en MAD"
+      },
+      "caption": {
+        "en": "Catalogue",
+        "fr": "Catalogue"
+      }
+    },
+    {
+      "image": "/images/projects/perfume-shop/cart.webp",
+      "alt": {
+        "en": "Cart with quantity buttons, subtotals, delivery fees and total to pay",
+        "fr": "Panier avec boutons de quantité, sous-totaux, frais de livraison et total à payer"
+      },
+      "caption": {
+        "en": "Cart with quantities and delivery fees",
+        "fr": "Panier avec quantités et frais de livraison"
+      }
+    },
+    {
+      "image": "/images/projects/perfume-shop/offers.webp",
+      "alt": {
+        "en": "Special offers page showing the original price, the discounted price and the discount percentage",
+        "fr": "Page des offres avec prix initial barré, prix réduit et pourcentage de réduction"
+      },
+      "caption": {
+        "en": "Promotional offers",
+        "fr": "Offres promotionnelles"
+      }
+    },
+    {
+      "image": "/images/projects/perfume-shop/admin-products.webp",
+      "alt": {
+        "en": "Admin product list with brand, price, stock and edit and delete buttons",
+        "fr": "Liste des produits côté administrateur avec marque, prix, stock et boutons modifier et supprimer"
+      },
+      "caption": {
+        "en": "Admin — products",
+        "fr": "Administration — produits"
+      }
+    },
+    {
+      "image": "/images/projects/perfume-shop/admin-offers.webp",
+      "alt": {
+        "en": "Admin offers list with name, price, included product IDs and actions",
+        "fr": "Liste des offres côté administrateur avec nom, prix, identifiants des produits inclus et actions"
+      },
+      "caption": {
+        "en": "Admin — offers",
+        "fr": "Administration — offres"
+      }
+    }
+  ],
+  "diagrams": [
+    {
+      "image": "/images/projects/perfume-shop/uml-use-case.webp",
+      "alt": {
+        "en": "Use case diagram — customer and administrator",
+        "fr": "Diagramme de cas d'utilisation — client et administrateur"
+      },
+      "caption": {
+        "en": "Use cases",
+        "fr": "Cas d'utilisation"
+      }
+    },
+    {
+      "image": "/images/projects/perfume-shop/uml-class.webp",
+      "alt": {
+        "en": "Class diagram — Customer, Order, OrderLine, Product, Category, Offer and Admin",
+        "fr": "Diagramme de classes — Client, Commande, LigneCommande, Produit, Catégorie, Offre et Admin"
+      },
+      "caption": {
+        "en": "Class diagram",
+        "fr": "Diagramme de classes"
+      }
+    },
+    {
+      "image": "/images/projects/perfume-shop/uml-sequence-order.webp",
+      "alt": {
+        "en": "Sequence diagram of placing an order, with one order line and a stock update per product",
+        "fr": "Diagramme de séquence de la passation de commande, avec une ligne de commande et une mise à jour du stock par produit"
+      },
+      "caption": {
+        "en": "Sequence — placing an order",
+        "fr": "Séquence — passation de commande"
+      }
+    },
+    {
+      "image": "/images/projects/perfume-shop/uml-activity-order.webp",
+      "alt": {
+        "en": "Activity diagram of the ordering process",
+        "fr": "Diagramme d'activité du processus de commande"
+      },
+      "caption": {
+        "en": "Activity — ordering process",
+        "fr": "Activité — processus de commande"
+      }
+    }
+  ],
   "sections": [
     {
       "key": "overview",
@@ -44,8 +170,8 @@
         "fr": "Vue d'ensemble"
       },
       "body": {
-        "en": "An academic e-commerce platform for selling perfumes, developed in PHP.",
-        "fr": "Une plateforme e-commerce académique de vente de parfums, développée en PHP."
+        "en": "An end-of-year team project at EMSI: a complete online perfume shop, from the specification and UML design to a working PHP and MySQL website.",
+        "fr": "Un projet de fin d'année réalisé en équipe à l'EMSI : une boutique de parfums en ligne complète, du cahier des charges et de la conception UML jusqu'à un site fonctionnel en PHP et MySQL."
       },
       "bullets": {
         "en": [],
@@ -64,20 +190,110 @@
       },
       "bullets": {
         "en": [
-          "User authentication",
-          "Product management"
+          "Catalogue by category: men's and women's perfumes",
+          "Search and product detail pages",
+          "Promotional offers: original price, discounted price and discount percentage",
+          "Session cart: add, remove, +/− quantities, live total",
+          "Delivery fees of 40 MAD, free from 1,700 MAD",
+          "Checkout form, then order confirmation"
         ],
         "fr": [
-          "Authentification des utilisateurs",
-          "Gestion des produits"
+          "Catalogue par catégorie : parfums homme et femme",
+          "Recherche et pages de détail produit",
+          "Offres promotionnelles : prix initial, prix réduit et pourcentage de réduction",
+          "Panier en session : ajout, suppression, quantités +/−, total en direct",
+          "Frais de livraison de 40 MAD, offerts dès 1 700 MAD",
+          "Formulaire de commande, puis confirmation"
         ]
+      }
+    },
+    {
+      "key": "admin",
+      "title": {
+        "en": "Administration",
+        "fr": "Administration"
+      },
+      "body": {
+        "en": "",
+        "fr": ""
+      },
+      "bullets": {
+        "en": [
+          "Admin login protected by a PHP session",
+          "Add, edit and delete products (name, brand, price, stock, category, image)",
+          "Create, edit and delete offers that bundle several products",
+          "View orders and change their status",
+          "View the customer list"
+        ],
+        "fr": [
+          "Connexion administrateur protégée par une session PHP",
+          "Ajout, modification et suppression de produits (nom, marque, prix, stock, catégorie, image)",
+          "Création, modification et suppression d'offres regroupant plusieurs produits",
+          "Consultation des commandes et modification de leur statut",
+          "Consultation de la liste des clients"
+        ]
+      }
+    },
+    {
+      "key": "design",
+      "title": {
+        "en": "Architecture",
+        "fr": "Architecture"
+      },
+      "body": {
+        "en": "A simple three-layer structure: HTML/CSS/JavaScript pages for presentation, PHP for the logic and MySQL for the data (products, customers, orders, order lines, offers and administrators). Developed locally with XAMPP and phpMyAdmin.",
+        "fr": "Une structure simple en trois couches : pages HTML/CSS/JavaScript pour la présentation, PHP pour la logique et MySQL pour les données (produits, clients, commandes, lignes de commande, offres et administrateurs). Développé en local avec XAMPP et phpMyAdmin."
+      },
+      "bullets": {
+        "en": [],
+        "fr": []
+      }
+    },
+    {
+      "key": "uml",
+      "title": {
+        "en": "UML",
+        "fr": "UML"
+      },
+      "body": {
+        "en": "The design is modelled in UML: use cases, classes, the ordering sequence and the ordering activity. Click a diagram to enlarge it.",
+        "fr": "La conception est modélisée en UML : cas d'utilisation, classes, séquence et activité de la commande. Cliquez sur un diagramme pour l'agrandir."
+      },
+      "bullets": {
+        "en": [],
+        "fr": []
+      }
+    },
+    {
+      "key": "screenshots",
+      "title": {
+        "en": "Screenshots",
+        "fr": "Captures d'écran"
+      },
+      "body": {
+        "en": "",
+        "fr": ""
+      },
+      "bullets": {
+        "en": [],
+        "fr": []
+      }
+    },
+    {
+      "key": "stack",
+      "title": {
+        "en": "Technology stack",
+        "fr": "Stack technique"
+      },
+      "body": {
+        "en": "",
+        "fr": ""
+      },
+      "bullets": {
+        "en": [],
+        "fr": []
       }
     }
   ],
-  "pending": [
-    "ADD PERIOD",
-    "CONFIRM STACK (plain PHP or Symfony, database)",
-    "ADD SCREENSHOTS",
-    "ADD GITHUB LINK (if public)"
-  ]
+  "pending": []
 }

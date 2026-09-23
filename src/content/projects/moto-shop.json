@@ -3,36 +3,154 @@
   "order": 1,
   "featured": false,
   "subtitle": {
-    "en": "Motorcycle e-commerce platform",
-    "fr": "Plateforme e-commerce de motos"
+    "en": "Motorcycle e-commerce web app built with Django",
+    "fr": "Application e-commerce de vente de motos avec Django"
   },
   "summary": {
-    "en": "A full-stack e-commerce website for selling motorcycles, built with Django: catalogue, shopping cart and order management.",
-    "fr": "Un site e-commerce full-stack de vente de motos développé avec Django : catalogue, panier et gestion des commandes."
+    "en": "Solo end-of-year project: a motorcycle shop with a filterable catalogue, a session-based cart, orders that update stock automatically, a customer order history and an admin dashboard.",
+    "fr": "Projet de fin d'année réalisé seul : une boutique de motos avec catalogue filtrable, panier en session, commandes qui mettent à jour le stock automatiquement, historique des commandes et tableau de bord administrateur."
   },
   "context": "academic",
   "period": {
-    "en": "",
-    "fr": ""
+    "en": "Semester 2, 2025–2026",
+    "fr": "Semestre 2, 2025-2026"
   },
-  "role": {},
+  "role": {
+    "en": "Solo project — requirements, UML design, development, testing and report",
+    "fr": "Projet individuel — analyse des besoins, conception UML, développement, tests et rapport"
+  },
   "stack": [
     "Python",
     "Django",
-    "HTML/CSS",
-    "JavaScript"
+    "Bootstrap 5",
+    "SQLite",
+    "HTML",
+    "CSS",
+    "Pillow",
+    "Git"
   ],
   "thumbnailAlt": {
-    "en": "Moto Shop — home page",
-    "fr": "Moto Shop — page d'accueil"
+    "en": "Moto Shop — catalogue home page with search and filters",
+    "fr": "Moto Shop — page d'accueil du catalogue avec recherche et filtres"
   },
   "repoVisibility": "unknown",
   "highlights": {
-    "en": [],
-    "fr": []
+    "en": [
+      "Four Django apps: catalogue, cart, orders and users",
+      "Stock decremented on every order, never below zero",
+      "Admin dashboard with key figures, plus the Django admin",
+      "CSRF protection, @login_required views and server-side form validation"
+    ],
+    "fr": [
+      "Quatre applications Django : catalogue, panier, commandes et utilisateurs",
+      "Stock décrémenté à chaque commande, jamais négatif",
+      "Tableau de bord administrateur avec indicateurs, en plus de l'admin Django",
+      "Protection CSRF, vues @login_required et validation des formulaires côté serveur"
+    ]
   },
-  "screenshots": [],
-  "diagrams": [],
+  "screenshots": [
+    {
+      "image": "/images/projects/moto-shop/home.webp",
+      "alt": {
+        "en": "Moto Shop home page — search bar, brand, category and price filters, motorcycle cards",
+        "fr": "Page d'accueil de Moto Shop — barre de recherche, filtres par marque, catégorie et prix, cartes des motos"
+      },
+      "caption": {
+        "en": "Catalogue with search and filters",
+        "fr": "Catalogue avec recherche et filtres"
+      }
+    },
+    {
+      "image": "/images/projects/moto-shop/moto-detail.webp",
+      "alt": {
+        "en": "Motorcycle detail page with price, description, available stock and quantity",
+        "fr": "Page de détail d'une moto avec prix, description, stock disponible et quantité"
+      },
+      "caption": {
+        "en": "Detail page with live stock",
+        "fr": "Page de détail avec le stock"
+      }
+    },
+    {
+      "image": "/images/projects/moto-shop/cart.webp",
+      "alt": {
+        "en": "Shopping cart with unit price, quantity, subtotal and total",
+        "fr": "Panier avec prix unitaire, quantité, sous-total et total"
+      },
+      "caption": {
+        "en": "Session-based cart",
+        "fr": "Panier stocké en session"
+      }
+    },
+    {
+      "image": "/images/projects/moto-shop/my-orders.webp",
+      "alt": {
+        "en": "Customer order history with date, total and status",
+        "fr": "Historique des commandes du client avec date, total et statut"
+      },
+      "caption": {
+        "en": "Customer order history",
+        "fr": "Historique des commandes du client"
+      }
+    },
+    {
+      "image": "/images/projects/moto-shop/admin-dashboard.webp",
+      "alt": {
+        "en": "Admin dashboard with counts of motorcycles, orders, customers and brands, and the latest orders",
+        "fr": "Tableau de bord administrateur avec le nombre de motos, commandes, clients et marques, et les dernières commandes"
+      },
+      "caption": {
+        "en": "Admin dashboard",
+        "fr": "Tableau de bord administrateur"
+      }
+    }
+  ],
+  "diagrams": [
+    {
+      "image": "/images/projects/moto-shop/uml-use-case.webp",
+      "alt": {
+        "en": "Use case diagram — visitor, signed-in user and administrator",
+        "fr": "Diagramme de cas d'utilisation — visiteur, utilisateur connecté et administrateur"
+      },
+      "caption": {
+        "en": "Use cases — three actors",
+        "fr": "Cas d'utilisation — trois acteurs"
+      }
+    },
+    {
+      "image": "/images/projects/moto-shop/uml-class.webp",
+      "alt": {
+        "en": "Class diagram of the Django models — Brand, Category, Motorcycle, Order, OrderLine and the built-in User",
+        "fr": "Diagramme de classes des modèles Django — Marque, Catégorie, Moto, Commande, LigneCommande et User intégré"
+      },
+      "caption": {
+        "en": "Class diagram — Django models",
+        "fr": "Diagramme de classes — modèles Django"
+      }
+    },
+    {
+      "image": "/images/projects/moto-shop/uml-sequence-order.webp",
+      "alt": {
+        "en": "Sequence diagram of placing an order across the catalogue, cart and orders apps and the SQLite database",
+        "fr": "Diagramme de séquence de la passation de commande entre les applications catalogue, panier, commandes et la base SQLite"
+      },
+      "caption": {
+        "en": "Sequence — placing an order",
+        "fr": "Séquence — passation de commande"
+      }
+    },
+    {
+      "image": "/images/projects/moto-shop/uml-activity-order.webp",
+      "alt": {
+        "en": "Activity diagram of the ordering process, from the catalogue to the confirmation",
+        "fr": "Diagramme d'activité du processus de commande, du catalogue à la confirmation"
+      },
+      "caption": {
+        "en": "Activity — ordering process",
+        "fr": "Activité — processus de commande"
+      }
+    }
+  ],
   "sections": [
     {
       "key": "overview",
@@ -41,8 +159,8 @@
         "fr": "Vue d'ensemble"
       },
       "body": {
-        "en": "An academic full-stack e-commerce project for selling motorcycles, built with Python and Django.",
-        "fr": "Un projet académique d'e-commerce full-stack pour la vente de motos, développé avec Python et Django."
+        "en": "An end-of-year project (3rd year, computer engineering at EMSI) that I carried out on my own: an online shop for motorcycles, from the requirements and UML design to the Django implementation and the report.",
+        "fr": "Un projet de fin d'année (3e année Génie Informatique à l'EMSI) que j'ai réalisé seul : une boutique en ligne de motos, de l'analyse des besoins et de la conception UML jusqu'à l'implémentation Django et au rapport."
       },
       "bullets": {
         "en": [],
@@ -55,25 +173,121 @@
         "en": "Features",
         "fr": "Fonctionnalités"
       },
-      "body": {},
+      "body": {
+        "en": "",
+        "fr": ""
+      },
       "bullets": {
         "en": [
-          "Motorcycle catalogue",
-          "Shopping cart",
-          "Order management"
+          "Catalogue with search and filters by brand, category and maximum price",
+          "Detail page with description, price and available stock",
+          "Session-based cart: add, remove, running total",
+          "Sign-up, login and logout; checkout reserved to signed-in users",
+          "Checkout form, order confirmation and order history",
+          "Admin: motorcycles, brands, categories, orders and their status"
         ],
         "fr": [
-          "Catalogue de motos",
-          "Panier",
-          "Gestion des commandes"
+          "Catalogue avec recherche et filtres par marque, catégorie et prix maximum",
+          "Page de détail avec description, prix et stock disponible",
+          "Panier en session : ajout, suppression, total mis à jour",
+          "Inscription, connexion et déconnexion ; commande réservée aux utilisateurs connectés",
+          "Formulaire de commande, confirmation et historique des commandes",
+          "Administration : motos, marques, catégories, commandes et leur statut"
         ]
+      }
+    },
+    {
+      "key": "design",
+      "title": {
+        "en": "Architecture",
+        "fr": "Architecture"
+      },
+      "body": {
+        "en": "Django's Model–View–Template pattern, split into four independent apps: catalogue (motorcycles, brands, categories), cart (stored in the Django session), orders (orders and order lines) and users (sign-up, login, logout). Data lives in SQLite through the Django ORM; images are handled with Pillow.",
+        "fr": "Le patron Modèle–Vue–Template de Django, découpé en quatre applications indépendantes : catalogue (motos, marques, catégories), panier (stocké dans la session Django), commandes (commandes et lignes de commande) et utilisateurs (inscription, connexion, déconnexion). Les données sont dans SQLite via l'ORM Django ; les images sont gérées avec Pillow."
+      },
+      "bullets": {
+        "en": [],
+        "fr": []
+      }
+    },
+    {
+      "key": "uml",
+      "title": {
+        "en": "UML",
+        "fr": "UML"
+      },
+      "body": {
+        "en": "The design is modelled in UML: use cases, Django models, the ordering sequence and the ordering activity. Click a diagram to enlarge it.",
+        "fr": "La conception est modélisée en UML : cas d'utilisation, modèles Django, séquence et activité de la commande. Cliquez sur un diagramme pour l'agrandir."
+      },
+      "bullets": {
+        "en": [],
+        "fr": []
+      }
+    },
+    {
+      "key": "screenshots",
+      "title": {
+        "en": "Screenshots",
+        "fr": "Captures d'écran"
+      },
+      "body": {
+        "en": "",
+        "fr": ""
+      },
+      "bullets": {
+        "en": [],
+        "fr": []
+      }
+    },
+    {
+      "key": "testing",
+      "title": {
+        "en": "Testing",
+        "fr": "Tests"
+      },
+      "body": {
+        "en": "",
+        "fr": ""
+      },
+      "bullets": {
+        "en": [
+          "Cart stored in the session after adding motorcycles",
+          "Catalogue filtering and search",
+          "Sign-up and login flow",
+          "Order placement and stock decrement",
+          "Error cases: 404 page, empty cart, user not signed in",
+          "Server-side form validation and CSRF protection"
+        ],
+        "fr": [
+          "Panier bien stocké en session après ajout de motos",
+          "Filtrage et recherche dans le catalogue",
+          "Parcours d'inscription et de connexion",
+          "Passation de commande et décrémentation du stock",
+          "Cas d'erreur : page 404, panier vide, utilisateur non connecté",
+          "Validation des formulaires côté serveur et protection CSRF"
+        ]
+      }
+    },
+    {
+      "key": "stack",
+      "title": {
+        "en": "Technology stack",
+        "fr": "Stack technique"
+      },
+      "body": {
+        "en": "",
+        "fr": ""
+      },
+      "bullets": {
+        "en": [],
+        "fr": []
       }
     }
   ],
-  "pending": [
-    "ADD PERIOD",
-    "CONFIRM DATABASE (SQLite / MySQL)",
-    "ADD SCREENSHOTS",
-    "ADD GITHUB LINK (if public)"
-  ]
+  "pending": [],
+  "thumbnail": "/images/projects/moto-shop/home.webp",
+  "repoUrl": "",
+  "liveUrl": ""
 }

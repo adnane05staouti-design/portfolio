@@ -12,8 +12,8 @@
   },
   "context": "academic",
   "period": {
-    "en": "",
-    "fr": ""
+    "en": "Semester 1, 2024–2025",
+    "fr": "Semestre 1, 2024-2025"
   },
   "role": {
     "en": "",
@@ -52,12 +52,22 @@
         "en": [],
         "fr": []
       }
+    },
+    {
+      "key": "stack",
+      "title": {
+        "en": "Technology stack",
+        "fr": "Stack technique"
+      },
+      "body": {
+        "en": "",
+        "fr": ""
+      },
+      "bullets": {
+        "en": [],
+        "fr": []
+      }
     }
   ],
-  "pending": [
-    "ADD PERIOD",
-    "ADD SENSORS / COMPONENTS USED",
-    "ADD PHOTO OR VIDEO",
-    "ADD GITHUB LINK (if public)"
-  ]
+  "pending": []
 }

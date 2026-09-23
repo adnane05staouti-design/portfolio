@@ -6,6 +6,7 @@ const read = (f) => JSON.parse(readFileSync(`src/content/${f}`, "utf8"));
 const empty = (v) => v === null || v === undefined || (typeof v === "string" && !v.trim());
 const emptyLoc = (v) => !v || (empty(v.en) && empty(v.fr));
 const missing = [];
+const optional = [];
 
 const p = read("profile.json");
 if (empty(p.photo)) missing.push("Profile → photo");
@@ -22,10 +23,16 @@ for (const file of readdirSync("src/content/projects").filter((f) => f.endsWith(
   const name = `Projects → ${pr.title}`;
   if (emptyLoc(pr.period)) missing.push(`${name} → period`);
   if (empty(pr.context)) missing.push(`${name} → context`);
-  if (empty(pr.thumbnail)) missing.push(`${name} → card image`);
+  if (empty(pr.thumbnail)) optional.push(`${name} → card image (a stack tile is shown instead)`);
   (pr.screenshots ?? []).forEach((s, i) => empty(s.image) && missing.push(`${name} → screenshot ${i + 1}`));
   (pr.diagrams ?? []).forEach((d) => empty(d.image) && missing.push(`${name} → ${d.alt?.en ?? "diagram"}`));
   (pr.pending ?? []).forEach((t) => missing.push(`${name} → ${t}`));
+}
+
+if (optional.length > 0) {
+  console.log(`ℹ ${optional.length} optional item(s):`);
+  optional.forEach((m) => console.log("  - " + m));
+  console.log("");
 }
 
 if (missing.length === 0) {
