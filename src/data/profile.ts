@@ -29,6 +29,31 @@ type ProfileJson = {
 
 const raw = profileJson as unknown as ProfileJson;
 
+/**
+ * Public URL of the site (SEO, sitemap, social previews).
+ * 1. NEXT_PUBLIC_SITE_URL if it is a valid http(s) URL
+ * 2. otherwise the production domain Vercel provides automatically
+ * 3. otherwise a default
+ * An empty or invalid variable never breaks the build.
+ */
+function resolveSiteUrl(): string {
+  const candidates = [
+    process.env.NEXT_PUBLIC_SITE_URL,
+    process.env.VERCEL_PROJECT_PRODUCTION_URL && `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`,
+    "https://adnane-staouti.vercel.app",
+  ];
+  for (const value of candidates) {
+    const url = value?.trim().replace(/\/+$/, "");
+    if (!url) continue;
+    try {
+      if (/^https?:$/.test(new URL(url).protocol)) return url;
+    } catch {
+      /* invalid value: try the next one */
+    }
+  }
+  return "https://adnane-staouti.vercel.app";
+}
+
 export const profile: Profile = {
   name: raw.name,
   shortName: raw.name.split(" ")[0],
@@ -45,8 +70,7 @@ export const profile: Profile = {
   email: textOr(raw.email, "ADD EMAIL"),
   cvUrl: textOr(raw.cv, "ADD CV"),
   photo: textOr(raw.photo, "ADD PHOTO"),
-  // Replace with the final domain after the first Vercel deployment.
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://adnane-staouti.vercel.app",
+  siteUrl: resolveSiteUrl(),
 };
 
 export const about: {
