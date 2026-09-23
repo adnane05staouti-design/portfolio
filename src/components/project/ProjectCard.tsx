@@ -60,6 +60,7 @@ export function ProjectCard({ project, locale, labels }: Props) {
             src={thumb}
             alt={project.thumbnail.alt[locale]}
             fill
+            quality={90}
             sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
             className="object-cover object-top transition-transform duration-700 ease-out-expo group-hover:scale-[1.03]"
           />

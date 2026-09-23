@@ -11,6 +11,8 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   images: {
     formats: ["image/avif", "image/webp"],
+    // 90 is used for screenshots (sharp text); 75 stays the default elsewhere.
+    qualities: [75, 90],
   },
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];

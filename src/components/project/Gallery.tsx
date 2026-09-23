@@ -42,7 +42,8 @@ export function Gallery({ items, labels, variant = "browser", columns = 2 }: Pro
                 src={item.src}
                 alt={item.alt}
                 fill
-                sizes="(min-width: 768px) 50vw, 100vw"
+                quality={90}
+                sizes={columns === 2 ? "(min-width: 1024px) 640px, (min-width: 768px) 50vw, 100vw" : "(min-width: 1280px) 1100px, 100vw"}
                 className="object-cover object-top transition-transform duration-700 ease-out-expo group-hover:scale-[1.02]"
               />
               <span className="absolute right-3 bottom-3 grid size-9 place-items-center rounded-full border border-line-strong bg-bg/80 text-fg opacity-0 backdrop-blur transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100">
@@ -183,7 +184,8 @@ function Lightbox({
             onClick={(e) => e.target === e.currentTarget && onClose()}
           >
             <div className={zoomed ? "relative h-[200%] w-[200%] min-w-[1600px]" : "absolute inset-4 md:inset-10"}>
-              <Image src={item.src} alt={item.alt} fill sizes="100vw" className="object-contain" priority />
+              {/* Full-resolution original in the lightbox: no recompression, sharpest text. */}
+              <Image src={item.src} alt={item.alt} fill sizes="100vw" className="object-contain" priority unoptimized />
             </div>
           </div>
         </motion.div>
