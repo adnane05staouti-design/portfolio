@@ -1,3 +1,20 @@
 {
-  "items": []
+  "items": [
+    {
+      "id": "epfl-cpp-oop",
+      "name": "Introduction à la programmation orientée objet (en C++)",
+      "issuer": "EPFL · Coursera",
+      "date": "2026-08",
+      "credentialId": "3IQCS3MGCZ6W",
+      "verifyUrl": "https://coursera.org/verify/3IQCS3MGCZ6W"
+    },
+    {
+      "id": "microsoft-365-fundamentals",
+      "name": "Microsoft 365 Fundamentals — Word, Excel, PowerPoint",
+      "issuer": "Microsoft · Coursera",
+      "date": "2026-08",
+      "credentialId": "A8SK45U63ZWP",
+      "verifyUrl": "https://coursera.org/verify/specialization/A8SK45U63ZWP"
+    }
+  ]
 }
