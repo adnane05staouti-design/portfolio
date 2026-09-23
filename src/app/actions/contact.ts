@@ -25,6 +25,9 @@ function rateLimited(ip: string) {
   return recent.length > LIMIT;
 }
 
+/** Env values pasted in a dashboard often carry spaces or quotes: clean them. */
+const env = (name: string) => process.env[name]?.trim().replace(/^["']|["']$/g, "").trim() || undefined;
+
 const escape = (s: string) =>
   s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
 
@@ -43,18 +46,24 @@ export async function sendContact(_prev: ContactState, formData: FormData): Prom
   if (Object.keys(errors).length > 0) return { status: "invalid", errors, values };
 
   const ip = (await headers()).get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
-  if (rateLimited(ip)) return { status: "error", values };
+  if (rateLimited(ip)) {
+    console.warn("[contact] rate limit reached");
+    return { status: "error", values };
+  }
 
-  const apiKey = process.env.RESEND_API_KEY;
-  const to = process.env.CONTACT_TO_EMAIL;
-  if (!apiKey || !to) return { status: "not_configured", values };
+  const apiKey = env("RESEND_API_KEY");
+  const to = env("CONTACT_TO_EMAIL");
+  if (!apiKey || !to) {
+    console.error(`[contact] not configured — RESEND_API_KEY ${apiKey ? "set" : "MISSING"}, CONTACT_TO_EMAIL ${to ? "set" : "MISSING"}`);
+    return { status: "not_configured", values };
+  }
 
   try {
     const res = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
       body: JSON.stringify({
-        from: process.env.CONTACT_FROM_EMAIL ?? "Portfolio <onboarding@resend.dev>",
+        from: env("CONTACT_FROM_EMAIL") ?? "Portfolio <onboarding@resend.dev>",
         to: [to],
         reply_to: values.email,
         subject: `[Portfolio] ${values.subject}`,
@@ -62,9 +71,14 @@ export async function sendContact(_prev: ContactState, formData: FormData): Prom
         html: `<p><strong>From:</strong> ${escape(values.name)} &lt;${escape(values.email)}&gt;</p><p>${escape(values.message).replace(/\n/g, "<br>")}</p>`,
       }),
     });
-    if (!res.ok) return { status: "error", values };
+    if (!res.ok) {
+      // Visible in Vercel → Logs. Never logs the API key.
+      console.error(`[contact] Resend refused the email: ${res.status} ${await res.text()}`);
+      return { status: "error", values };
+    }
     return { status: "success" };
-  } catch {
+  } catch (error) {
+    console.error("[contact] could not reach Resend:", error);
     return { status: "error", values };
   }
 }
