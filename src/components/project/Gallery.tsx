@@ -35,7 +35,7 @@ export function Gallery({ items, labels, variant = "browser", columns = 2 }: Pro
             <button
               type="button"
               onClick={() => setOpen(i)}
-              className="group relative block aspect-[16/10] w-full overflow-hidden bg-bg"
+              className="group relative block aspect-[2/1] w-full overflow-hidden bg-bg"
               aria-label={`${labels.zoom}: ${item.alt}`}
             >
               <Image

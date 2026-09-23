@@ -41,7 +41,7 @@
     "Docker Compose",
     "Nginx"
   ],
-  "thumbnail": null,
+  "thumbnail": "/images/projects/aos-abhbc/home.webp",
   "thumbnailAlt": {
     "en": "AOS ABHBC — employee portal",
     "fr": "AOS ABHBC — portail employé"
@@ -65,36 +65,47 @@
   },
   "screenshots": [
     {
-      "image": null,
+      "image": "/images/projects/aos-abhbc/home.webp",
       "alt": {
+        "en": "Employee portal — nine social-service categories (Arabic interface)",
+        "fr": "Portail employé — neuf catégories de services sociaux (interface en arabe)"
+      },
+      "caption": {
         "en": "Employee portal — service categories",
         "fr": "Portail employé — catégories de services"
-      },
-      "caption": {
-        "en": "Employee portal",
-        "fr": "Portail employé"
       }
     },
     {
-      "image": null,
+      "image": "/images/projects/aos-abhbc/admin-dashboard.webp",
       "alt": {
+        "en": "Admin dashboard — daily counters and most ordered items",
+        "fr": "Tableau de bord admin — compteurs du jour et articles les plus commandés"
+      },
+      "caption": {
         "en": "Admin dashboard — overview tab",
         "fr": "Tableau de bord admin — vue d'ensemble"
-      },
-      "caption": {
-        "en": "Admin dashboard",
-        "fr": "Tableau de bord admin"
       }
     },
     {
-      "image": null,
+      "image": "/images/projects/aos-abhbc/buvette.webp",
       "alt": {
-        "en": "Reservation and order flow",
-        "fr": "Parcours de réservation et de commande"
+        "en": "Cafeteria page — lunch, meeting and breakfast reservations",
+        "fr": "Page buvette — réservations du déjeuner, des réunions et du petit-déjeuner"
       },
       "caption": {
-        "en": "Reservations & orders",
-        "fr": "Réservations et commandes"
+        "en": "Cafeteria — choose a reservation type",
+        "fr": "Buvette — choix du type de réservation"
+      }
+    },
+    {
+      "image": "/images/projects/aos-abhbc/meeting-order.webp",
+      "alt": {
+        "en": "Meeting order form — items from the admin-managed catalogue",
+        "fr": "Formulaire de commande réunion — articles du catalogue géré par l'admin"
+      },
+      "caption": {
+        "en": "Meeting order — dynamic catalogue",
+        "fr": "Commande réunion — catalogue dynamique"
       }
     }
   ],
