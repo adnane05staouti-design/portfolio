@@ -9,6 +9,8 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  // Keystatic (GitHub mode) opens the admin on 127.0.0.1 in development.
+  allowedDevOrigins: ["127.0.0.1"],
   images: {
     formats: ["image/avif", "image/webp"],
     // 90 is used for screenshots (sharp text); 75 stays the default elsewhere.
