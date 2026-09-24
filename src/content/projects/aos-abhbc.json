@@ -107,6 +107,28 @@
         "en": "Meeting order — dynamic catalogue",
         "fr": "Commande réunion — catalogue dynamique"
       }
+    },
+    {
+      "image": "/images/projects/aos-abhbc/telegram-orders.webp",
+      "alt": {
+        "en": "Telegram notifications received by the cafeteria manager: lunch reservation and meeting order with items and notes (Arabic)",
+        "fr": "Notifications Telegram reçues par le responsable de la buvette : réservation de déjeuner et commande de réunion avec articles et précisions (en arabe)"
+      },
+      "caption": {
+        "en": "Telegram — automatic order notifications",
+        "fr": "Telegram — notifications automatiques des commandes"
+      }
+    },
+    {
+      "image": "/images/projects/aos-abhbc/telegram-channel.webp",
+      "alt": {
+        "en": "Telegram announcements channel: announcements published from the admin dashboard, relayed automatically with image and text",
+        "fr": "Canal Telegram des annonces : annonces publiées depuis le tableau de bord, relayées automatiquement avec image et texte"
+      },
+      "caption": {
+        "en": "Telegram — announcements channel",
+        "fr": "Telegram — canal des annonces"
+      }
     }
   ],
   "diagrams": [
