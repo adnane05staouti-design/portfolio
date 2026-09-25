@@ -23,7 +23,7 @@
     "Python",
     "Django",
     "Bootstrap 5",
-    "SQLite",
+    "MySQL",
     "HTML",
     "CSS",
     "Pillow",
@@ -33,7 +33,7 @@
     "en": "Moto Shop — catalogue home page with search and filters",
     "fr": "Moto Shop — page d'accueil du catalogue avec recherche et filtres"
   },
-  "repoVisibility": "unknown",
+  "repoVisibility": "public",
   "highlights": {
     "en": [
       "Four Django apps: catalogue, cart, orders and users",
@@ -131,8 +131,8 @@
     {
       "image": "/images/projects/moto-shop/uml-sequence-order.webp",
       "alt": {
-        "en": "Sequence diagram of placing an order across the catalogue, cart and orders apps and the SQLite database",
-        "fr": "Diagramme de séquence de la passation de commande entre les applications catalogue, panier, commandes et la base SQLite"
+        "en": "Sequence diagram of placing an order across the catalogue, cart and orders apps and the database",
+        "fr": "Diagramme de séquence de la passation de commande entre les applications catalogue, panier, commandes et la base de données"
       },
       "caption": {
         "en": "Sequence — placing an order",
@@ -203,8 +203,8 @@
         "fr": "Architecture"
       },
       "body": {
-        "en": "Django's Model–View–Template pattern, split into four independent apps: catalogue (motorcycles, brands, categories), cart (stored in the Django session), orders (orders and order lines) and users (sign-up, login, logout). Data lives in SQLite through the Django ORM; images are handled with Pillow.",
-        "fr": "Le patron Modèle–Vue–Template de Django, découpé en quatre applications indépendantes : catalogue (motos, marques, catégories), panier (stocké dans la session Django), commandes (commandes et lignes de commande) et utilisateurs (inscription, connexion, déconnexion). Les données sont dans SQLite via l'ORM Django ; les images sont gérées avec Pillow."
+        "en": "Django's Model–View–Template pattern, split into four independent apps: catalogue (motorcycles, brands, categories), cart (stored in the Django session), orders (orders and order lines) and users (sign-up, login, logout). Data lives in MySQL (MariaDB via XAMPP) through the Django ORM; images are handled with Pillow.",
+        "fr": "Le patron Modèle–Vue–Template de Django, découpé en quatre applications indépendantes : catalogue (motos, marques, catégories), panier (stocké dans la session Django), commandes (commandes et lignes de commande) et utilisateurs (inscription, connexion, déconnexion). Les données sont dans MySQL (MariaDB via XAMPP) via l'ORM Django ; les images sont gérées avec Pillow."
       },
       "bullets": {
         "en": [],
@@ -288,6 +288,6 @@
   ],
   "pending": [],
   "thumbnail": "/images/projects/moto-shop/home.webp",
-  "repoUrl": "",
+  "repoUrl": "https://github.com/adnane05staouti-design/moto-shop",
   "liveUrl": ""
 }
